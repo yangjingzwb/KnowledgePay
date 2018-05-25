@@ -1,0 +1,73 @@
+@import "src/style/index";
+
+
+@keyframes mymove1 {
+    to {left:-130%;}
+}
+
+.person{
+    height: 100%;
+    background-color: #f5f5f5;
+    color: #242424;
+    
+    .arrow{
+        width: r(7);
+        margin-right: r(20);
+    }
+
+    .my-picture-container{
+        height: r(95);
+        background-color: #fff;
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+
+        .my-picture{
+            border-radius: 50%;
+            width: r(65);
+            height: r(65);
+            margin-left: r(12.5);
+        }
+
+        .my-name{
+            display: inline-block;
+            margin-left: r(10);
+            color: #333;
+            font-size: r(16);
+            flex: 1;
+        }
+    }
+
+    .info-container{
+        margin-top: r(8);
+        background-color: #fff;
+
+        .info{
+            height: r(60);
+            border-bottom: r(1) solid #f0f0f0;
+            display: flex;
+            display: -webkit-flex;
+            align-items: center;
+
+            .info-name{
+                display: inline-block;
+                flex: 1;
+                margin-left: r(15);
+                color: #4c4c4c;
+                font-size: r(15);
+            }
+            
+            .info-icon{
+                width: r(20);
+                height: r(20);
+                margin-left: r(15);
+            }
+
+            .num{
+                margin-right: r(10);
+                color: #999;
+                font-size: r(14);
+            }
+        }
+    }
+}

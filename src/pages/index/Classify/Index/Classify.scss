@@ -1,0 +1,122 @@
+@import "src/style/index";
+
+
+@keyframes mymove1 {
+    to {left:-130%;}
+}
+
+.classify-container{
+    height: 100%;
+    background-color: #fff;
+
+    .classify-line{
+        background-color: #FAFAFA;
+        height: r(40);
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        overflow: auto;
+        border-bottom: r(1) solid #e9e9e9;
+        
+        li{
+            line-height: r(40);
+            text-align: center;
+            flex: 1;
+            min-width: 16.6666%;
+
+            .classify-name{
+                display: inline-block;
+                position: relative;
+                color: #333;
+                font-size: r(15);
+
+                .actived{
+                    color:#ff2d55!important;
+                }
+
+                .actived-line{
+                    display: inline-block;
+                    border: r(1) solid #ff2d55;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    .classify-line::-webkit-scrollbar {
+        display:none
+    }
+    .line{
+        height: r(15);
+        background-color: #fff;
+    }
+
+    .classify-course-container{
+        .course-list{
+            padding-bottom: r(49);
+            
+            .course-container{
+                border-bottom: r(1) solid #e9e9e9;
+                padding-left:r(17);
+                padding-right: r(15);
+                padding-bottom: r(15);
+                margin-bottom: r(15);
+                display: flex;
+                display: -webkit-flex;
+
+                img{
+                    display: inline-block;
+                    width:r(120);
+                    height: r(74);
+                    // max-height: r(80);
+                    // width: r(80);
+                }
+
+                .abstract{
+                    flex: 1;
+                    margin-left: r(16.5);
+                }
+
+                .title,.teacher,.courses,.times{
+                    display: block;
+                }
+                .title{
+                    font-size: r(15);
+                    color: #333;
+                    font-weight: 700;
+                }
+                .courses{
+                    font-size: r(12);
+                    color: #b8b0b0;
+                }
+                .last-line{
+                    display: flex;
+                    display: -webkit-flex;
+                    justify-content: space-between;
+
+                    .times{
+                        font-size: r(11);
+                        color: #b8b0b0;
+                    }
+                    .prices{
+                        font-size: r(12);
+                        .delete-price{
+                            text-decoration:line-through;
+                            color: #c7c7c7;
+                        }
+                        .real-price{
+                            color: #f74e5e;
+                        }
+                    }
+                }
+                
+
+            }
+        }
+    }
+}

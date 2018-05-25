@@ -1,0 +1,216 @@
+{
+  "code": 200,
+  "success": true,
+  "message": "请求成功！",
+  data: function({
+    _req,
+    Mock
+  }) {
+    var data;
+    switch (_req.body.position) {
+      case 'CATALOG':
+        data = [{
+            "marketingId": "101", //编号
+            "marketingPosition": "CATALOG", // 类型>TOP：banner CATALOG：商品分类 MIDDLE：底栏
+            "marketingIndex": "1", // 位置序号 1 2 3 4 5 6 ...
+            "marketingIcon": "http://192.168.157.68/static/img/index-icon-1.png", // 图标地址
+            "marketingTitle": "大师课", //标题
+            "marketingDesc": "大师课", //描述
+            "marketingRegion": "", //省份地址
+            "marketEvent": "", // 事件>REDIRECT：重定向 NOTIFY：消息
+            "marketingEventCotent": "", // 跳转地址或消息
+            "marketingStatus": "1", // 状态> 0：显示 1：隐藏
+            "creatTime": "", // 创建时间
+            "effectiveDate": "", // 生效时间
+            "expirationDate": "", // 失效时间
+            "archiveFlag": "1" // 归档标识>0：有效 1：归档 
+          },
+          {
+            "marketingId": "101", //编号
+            "marketingPosition": "CATALOG", // 类型>TOP：banner CATALOG：商品分类 MIDDLE：底栏
+            "marketingIndex": "1", // 位置序号 1 2 3 4 5 6 ...
+            "marketingIcon": "http://192.168.157.68/static/img/index-icon-1.png", // 图标地址
+            "marketingTitle": "大师课", //标题
+            "marketingDesc": "大师课", //描述
+            "marketingRegion": "", //省份地址
+            "marketEvent": "", // 事件>REDIRECT：重定向 NOTIFY：消息
+            "marketingEventCotent": "", // 跳转地址或消息
+            "marketingStatus": "1", // 状态> 0：显示 1：隐藏
+            "creatTime": "", // 创建时间
+            "effectiveDate": "", // 生效时间
+            "expirationDate": "", // 失效时间
+            "archiveFlag": "1" // 归档标识>0：有效 1：归档 
+          },
+          {
+            "marketingId": "102", //编号
+            "marketingPosition": "CATALOG", // 类型>TOP：banner CATALOG：商品分类 MIDDLE：底栏
+            "marketingIndex": "1", // 位置序号 1 2 3 4 5 6 ...
+            "marketingIcon": "http://192.168.157.68/static/img/index-icon-2.png", // 图标地址
+            "marketingTitle": "免费专区", //标题
+            "marketingDesc": "免费专区", //描述
+            "marketingRegion": "", //省份地址
+            "marketEvent": "", // 事件>REDIRECT：重定向 NOTIFY：消息
+            "marketingEventCotent": "", // 跳转地址或消息
+            "marketingStatus": "1", // 状态> 0：显示 1：隐藏
+            "creatTime": "", // 创建时间
+            "effectiveDate": "", // 生效时间
+            "expirationDate": "", // 失效时间
+            "archiveFlag": "1" // 归档标识>0：有效 1：归档 
+          },
+          {
+            "marketingId": "103", //编号
+            "marketingPosition": "CATALOG", // 类型>TOP：banner CATALOG：商品分类 MIDDLE：底栏
+            "marketingIndex": "1", // 位置序号 1 2 3 4 5 6 ...
+            "marketingIcon": "http://192.168.157.68/static/img/index-icon-3.png", // 图标地址
+            "marketingTitle": "领券中心", //标题
+            "marketingDesc": "领券中心", //描述
+            "marketingRegion": "", //省份地址
+            "marketEvent": "", // 事件>REDIRECT：重定向 NOTIFY：消息
+            "marketingEventCotent": "", // 跳转地址或消息
+            "marketingStatus": "1", // 状态> 0：显示 1：隐藏
+            "creatTime": "", // 创建时间
+            "effectiveDate": "", // 生效时间
+            "expirationDate": "", // 失效时间
+            "archiveFlag": "1" // 归档标识>0：有效 1：归档 
+          }， {
+            "marketingId": "104", //编号
+            "marketingPosition": "CATALOG", // 类型>TOP：banner CATALOG：商品分类 MIDDLE：底栏
+            "marketingIndex": "1", // 位置序号 1 2 3 4 5 6 ...
+            "marketingIcon": "http://192.168.157.68/static/img/index-icon-4.png", // 图标地址
+            "marketingTitle": "排行榜", //标题
+            "marketingDesc": "排行榜", //描述
+            "marketingRegion": "", //省份地址
+            "marketEvent": "", // 事件>REDIRECT：重定向 NOTIFY：消息
+            "marketingEventCotent": "", // 跳转地址或消息
+            "marketingStatus": "1", // 状态> 0：显示 1：隐藏
+            "creatTime": "", // 创建时间
+            "effectiveDate": "", // 生效时间
+            "expirationDate": "", // 失效时间
+            "archiveFlag": "1" // 归档标识>0：有效 1：归档 
+          },
+          {
+            "marketingId": "104", //编号
+            "marketingPosition": "TOP", // 类型>TOP：banner CATALOG：商品分类 MIDDLE：底栏
+            "marketingIndex": "1", // 位置序号 1 2 3 4 5 6 ...
+            "marketingIcon": "http://192.168.157.68/static/img/index-icon-5.png", // 图标地址
+            "marketingTitle": "限时底价", //标题
+            "marketingDesc": "限时底价", //描述
+            "marketingRegion": "", //省份地址
+            "marketEvent": "", // 事件>REDIRECT：重定向 NOTIFY：消息
+            "marketingEventCotent": "", // 跳转地址或消息
+            "marketingStatus": "1", // 状态> 0：显示 1：隐藏
+            "creatTime": "", // 创建时间
+            "effectiveDate": "", // 生效时间
+            "expirationDate": "", // 失效时间
+            "archiveFlag": "1" // 归档标识>0：有效 1：归档 
+          },
+        ]
+        break;
+      case 'TOP':
+        data = [{
+            "marketingId": "111", //编号
+            "marketingPosition": "TOP", // 类型>TOP：banner CATALOG：商品分类 MIDDLE：底栏
+            "marketingIndex": "1", // 位置序号 1 2 3 4 5 6 ...
+            "marketingIcon": "http://192.168.157.68/static/img/banner.jpg", // 图标地址
+            "marketingTitle": "", //标题
+            "marketingDesc": "", //描述
+            "marketingRegion": "", //省份地址
+            "marketEvent": "", // 事件>REDIRECT：重定向 NOTIFY：消息
+            "marketingEventCotent": "https://www.baidu.com", // 跳转地址或消息
+            "marketingStatus": "1", // 状态> 0：显示 1：隐藏
+            "creatTime": "", // 创建时间
+            "effectiveDate": "", // 生效时间
+            "expirationDate": "", // 失效时间
+            "archiveFlag": "1" // 归档标识>0：有效 1：归档 
+          },
+          {
+            "marketingId": "112", //编号
+            "marketingPosition": "TOP", // 类型>TOP：banner CATALOG：商品分类 MIDDLE：底栏
+            "marketingIndex": "1", // 位置序号 1 2 3 4 5 6 ...
+            "marketingIcon": "http://192.168.157.68/static/img/banner.jpg", // 图标地址
+            "marketingTitle": "", //标题
+            "marketingDesc": "", //描述
+            "marketingRegion": "", //省份地址
+            "marketEvent": "", // 事件>REDIRECT：重定向 NOTIFY：消息
+            "marketingEventCotent": "https://www.baidu.com", // 跳转地址或消息
+            "marketingStatus": "1", // 状态> 0：显示 1：隐藏
+            "creatTime": "", // 创建时间
+            "effectiveDate": "", // 生效时间
+            "expirationDate": "", // 失效时间
+            "archiveFlag": "1" // 归档标识>0：有效 1：归档 
+          }
+        ]
+        break;
+      case 'MIDDLE':
+        data = [{
+            "marketingId": "121", //编号
+            "marketingPosition": "MIDDLE", // 类型>TOP：banner CATALOG：商品分类 MIDDLE：底栏
+            "marketingIndex": "1", // 位置序号 1 2 3 4 5 6 ...
+            "marketingIcon": "http://192.168.157.68/static/img/icon-index-active.png", // 图标地址
+            "marketingTitle": "", //标题
+            "marketingDesc": "首页", //描述
+            "marketingRegion": "首页", //省份地址
+            "marketEvent": "", // 事件>REDIRECT：重定向 NOTIFY：消息
+            "marketingEventCotent": "", // 跳转地址或消息
+            "marketingStatus": "1", // 状态> 0：显示 1：隐藏
+            "creatTime": "", // 创建时间
+            "effectiveDate": "", // 生效时间
+            "expirationDate": "", // 失效时间
+            "archiveFlag": "1" // 归档标识>0：有效 1：归档 
+          },
+          {
+            "marketingId": "124", //编号
+            "marketingPosition": "MIDDLE", // 类型>TOP：banner CATALOG：商品分类 MIDDLE：底栏
+            "marketingIndex": "1", // 位置序号 1 2 3 4 5 6 ...
+            "marketingIcon": "http://192.168.157.68/static/img/icon-index-kc-gray.png", // 图标地址
+            "marketingTitle": "", //标题
+            "marketingDesc": "我的课程", //描述
+            "marketingRegion": "我的课程", //省份地址
+            "marketEvent": "", // 事件>REDIRECT：重定向 NOTIFY：消息
+            "marketingEventCotent": "", // 跳转地址或消息
+            "marketingStatus": "1", // 状态> 0：显示 1：隐藏
+            "creatTime": "", // 创建时间
+            "effectiveDate": "", // 生效时间
+            "expirationDate": "", // 失效时间
+            "archiveFlag": "1" // 归档标识>0：有效 1：归档 
+          },
+          {
+            "marketingId": "123", //编号
+            "marketingPosition": "MIDDLE", // 类型>TOP：banner CATALOG：商品分类 MIDDLE：底栏
+            "marketingIndex": "1", // 位置序号 1 2 3 4 5 6 ...
+            "marketingIcon": "http://192.168.157.68/static/img/icon-me-gray.png", // 图标地址
+            "marketingTitle": "", //标题
+            "marketingDesc": "个人中心", //描述
+            "marketingRegion": "个人中心", //省份地址
+            "marketEvent": "", // 事件>REDIRECT：重定向 NOTIFY：消息
+            "marketingEventCotent": "", // 跳转地址或消息
+            "marketingStatus": "1", // 状态> 0：显示 1：隐藏
+            "creatTime": "", // 创建时间
+            "effectiveDate": "", // 生效时间
+            "expirationDate": "", // 失效时间
+            "archiveFlag": "1" // 归档标识>0：有效 1：归档 
+          }
+        ]
+        break;
+      default:
+        data = [{
+          "marketingId": "111", //编号
+          "marketingPosition": "banner", // 类型>TOP：banner CATALOG：商品分类 MIDDLE：底栏
+          "marketingIndex": "1", // 位置序号 1 2 3 4 5 6 ...
+          "marketingIcon": "/KnowledgePay/images/banner.jpg", // 图标地址
+          "marketingTitle": "", //标题
+          "marketingDesc": "", //描述
+          "marketingRegion": "", //省份地址
+          "marketEvent": "", // 事件>REDIRECT：重定向 NOTIFY：消息
+          "marketingEventCotent": "", // 跳转地址或消息
+          "marketingStatus": "", // 状态> 0：显示 1：隐藏
+          "creatTime": "", // 创建时间
+          "effectiveDate": "", // 生效时间
+          "expirationDate": "", // 失效时间
+          "archiveFlag": "" // 归档标识>0：有效 1：归档 
+        }]
+
+    }
+    return res;
+  }
+}

@@ -1,0 +1,73 @@
+@import "src/style/index";
+
+
+@keyframes mymove1 {
+    to {left:-130%;}
+}
+
+.collection-container{
+    background-color: #fff;
+    height: 100%;
+
+    .collection-list{
+        background-color: #fff;
+        .course-container{
+            height: r(90);
+            border-bottom: r(1) solid #e9e9e9;
+            padding-left:r(15);
+            padding-right: r(22);
+            display: flex;
+            display: -webkit-flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            img{
+                display: inline-block;
+                width: r(95);
+                height: r(58);
+            }
+
+            .abstract{
+                display: inline-block;
+                margin-left: r(15);
+                flex: 1;
+            }
+
+            .title,.time{
+                display: block;
+            }
+            .title{
+                font-size: r(14);
+                font-weight: bold;
+                color: #424242;
+            }
+            .time{
+                font-size: r(11);
+                margin-top: r(8);
+                color: #999090;
+            }
+        }
+    }
+
+    .no-more{
+        color: #c7c7c7;
+        font-size: r(13);
+        text-align: center;
+        padding: r(15) r(7.5);
+    }
+
+    .no-collection{
+        display: block;
+        margin: auto;
+        width: r(150);
+        padding-top: r(80);
+    }
+
+    .nothing{
+        color: #c7c7c7;
+        font-size: r(13);
+        text-align: center;
+        margin-top: r(20);
+        text-align: center;
+    }
+}

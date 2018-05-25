@@ -1,0 +1,183 @@
+@import "src/style/index";
+
+
+@keyframes mymove1 {
+    to {left:-130%;}
+}
+
+.course-detail{
+    height: 100%;
+    background-color: #fff;
+    overflow: auto;
+
+    .play-container{
+        height: r(235);
+    }
+    .info-container{
+        padding: r(15);
+
+        .title{
+            font-size: r(16);
+            color:#424242;
+            font-weight: bold;
+            margin-bottom: r(8);
+        }
+        .courses{
+            font-size: r(12);
+            color: #b8b0b0;
+            margin-bottom: r(8);
+        }
+        .price{
+            color:#f73657;
+            font-weight: bold;
+            font-size: r(16);
+        }
+    }
+    .line{
+        height: r(10);
+        background-color: #F5F5F5;
+    }
+
+    .introduction-container{
+        display: flex;
+        display:-webkit-flex;
+        flex-direction: row;
+        border-bottom: r(1) solid #e9e9e9;
+
+        .item{
+            flex: 1;
+            height: r(40);
+            line-height: r(40);
+            text-align: center;
+        }
+
+        .item-name{
+            position: relative;
+            display: inline-block;
+            height: 100%;
+            color:#242424;
+        }
+
+        .actived{
+            color:#ff2d55!important;
+        }
+
+        .actived-line{
+            display: inline-block;
+            border: r(1) solid #ff2d55;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+
+    .course-container{
+        background-color: #fff;
+        .course-list{
+            padding-bottom: r(49);
+            padding-top: r(15);
+            
+            .course-box{
+                border-bottom: r(1) solid #e9e9e9;
+                padding-left:r(17);
+                padding-right: r(15);
+                padding-bottom: r(15);
+                margin-bottom: r(15);
+                display: flex;
+                display: -webkit-flex;
+
+                img{
+                    display: inline-block;
+                    width:r(120);
+                    height: r(74);
+                }
+
+                .abstract{
+                    flex: 1;
+                    margin-left: r(16.5);
+                }
+
+                .text,.released-time,.times{
+                    display: block;
+                }
+                .text{
+                    font-size: r(14);
+                    color: #333;
+                    font-weight: 700;
+                    margin-bottom: r(5);
+                }
+                .released-time,.times{
+                    font-size: r(12);
+                    color: #b8b0b0;
+                }
+                .released-time{
+                    margin-bottom: r(5);
+                }
+                .last-line{
+                    display: flex;
+                    display: -webkit-flex;
+                    justify-content: space-between;
+
+                    .times{
+                        font-size: r(11);
+                        color: #b8b0b0;
+                    }
+                    .prices{
+                        font-size: r(12);
+                        .delete-price{
+                            text-decoration:line-through;
+                            color: #c7c7c7;
+                        }
+                        .real-price{
+                            color: #f74e5e;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    
+
+    .pay-container{
+        height: r(50);
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        display: -webkit-flex;
+        width: 100%;
+        flex-direction: row;
+
+        .collect{
+            flex:1;
+            text-align: center;
+            font-size: r(10);
+            color: #8e8585;
+            background-color: #fff;
+            display: flex;
+            display: -webkit-flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .collect-icon{
+                width: r(17);
+                margin-bottom: r(7);
+            }
+        }
+        .actived{
+            //color: #ff2d55!important;
+        }
+        .pay-btn{
+            flex:8;
+            line-height: r(45);
+            text-align: center;
+            background-color: #ed3b59;
+            color: #fff!important;
+            font-size: r(17);
+        }
+    }
+}
